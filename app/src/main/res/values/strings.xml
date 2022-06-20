@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PPB_App</string>
+    <!--  MAIN ACTIVITY   -->
+    <string name="title_app">Android App UIKA</string>
+    <string name="versi">V.1.0</string>
+
+    <!-- DASHBOARD -->
+    <string name="title_dashboard">Dasboard Kampus</string>
+    <string name="btn_intent">Cek Intent</string>
+    <string name="btn_kalkulator">Kalkulator Sederhana</string>
+    <string name="btn_database">Database Nama</string>
+</resources>
