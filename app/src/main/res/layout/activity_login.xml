@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+    <TextView
+        android:id="@+id/title_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="100dip"
+        android:layout_marginBottom="100dip"
+        android:textStyle="bold"
+        android:textSize="20dip"
+        android:textColor="@color/teal_700"
+        android:text="Login"
+        />
+
+    <EditText
+        android:id="@+id/EditName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dip"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/teal_700"
+        android:hint="Masukan Nama"
+        />
+
+    <EditText
+        android:id="@+id/EditPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dip"
+        android:ems="10"
+        android:textColor="@color/teal_700"
+        android:hint="Masukan Password"
+        android:inputType="textPassword"
+        />
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dip"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:background="@color/teal_700"
+        />
+
+</LinearLayout>

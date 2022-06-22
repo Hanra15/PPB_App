@@ -1,9 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".DatabaseActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="24dip"
+        android:layout_marginTop="20dip"
+        android:layout_marginBottom="20dip"
+        android:textColor="@color/teal_700"
+        android:text="database nama"
+        android:fontFamily="cursive"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+
+        android:hint="Name"
+        />
+
+    <EditText
+        android:id="@+id/editSurname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+
+        android:hint="Surname" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_margin="10dip"
+
+        >
+        <Button
+            android:id="@+id/btnTambahdata"
+            android:layout_width="wrap_content"
+            android:layout_height="75dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="30dip"
+            android:layout_marginBottom="30dip"
+            android:padding="10dip"
+            android:text="Tambah"
+            android:background="@color/teal_700"
+            android:textColor="@color/white"
+            android:onClick="btn_click"
+            />
+        <Button
+            android:id="@+id/btnUpdatedata"
+            android:layout_width="wrap_content"
+            android:layout_height="75dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="30dip"
+            android:layout_marginBottom="30dip"
+            android:padding="10dip"
+            android:text="Update"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:onClick="btn_click"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_margin="10dip"
+
+        >
+        <Button
+            android:id="@+id/btnHapusdata"
+            android:layout_width="wrap_content"
+            android:layout_height="75dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="30dip"
+            android:layout_marginBottom="30dip"
+            android:padding="10dip"
+            android:text="Hapus"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:onClick="btn_click"
+
+            />
+        <Button
+            android:id="@+id/btnListdata"
+            android:layout_width="wrap_content"
+            android:layout_height="75dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="30dip"
+            android:layout_marginBottom="30dip"
+            android:padding="10dip"
+            android:text="List Data"
+            android:background="@color/green"
+            android:textColor="@color/white"
+            android:onClick="btn_click"
+
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvHasildata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="20dip"
+        android:text="Hasil"
+        />
+</LinearLayout>
